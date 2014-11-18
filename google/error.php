@@ -7,7 +7,7 @@
  * @package  Google
  * @author   Chernov Aleksandr <adok@ukr.net>
  */
-class Error 
+class Google_Error 
 {
 	
 	public function __construct(array $config)

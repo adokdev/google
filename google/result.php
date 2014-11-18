@@ -2,7 +2,7 @@
 /**
  * BTECH
  *
- * Provides functionality to authorize in Google service
+ * Check and perform "human based" response
  * @category BTECH
  * @package  Google
  * @author   Chernov Aleksandr <adok@ukr.net>

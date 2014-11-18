@@ -14,7 +14,12 @@ class Google
   /**
    * Google api base URL
    */
-	const ENDPOINT = "https://www.googleapis.com";
+	const ENDPOINT = "https://www.googleapis.com/";
+
+  /**
+   * Google api version
+   */
+	const API_VERSION = "v3";
 
   /**
    * Instance of Google api library
@@ -83,6 +88,14 @@ class Google
 	}
 
   /**
+   * @return Google api VERSION
+   */
+	public static function version()
+	{
+		return static::API_VERSION;
+	}
+
+  /**
    * Authorize in google servise.
    *
    * @return Google
@@ -105,6 +118,15 @@ class Google
   public function auths(){
   	return self::$auths;
   }
+  /**
+   * Return the ggole calendar library instance
+   *
+   * @return Google_Calendar
+   */
+  public function calendar(){
+		return new Google_Calendar($this);  	
+  }
+
 
   /**
    * Set global configuration options
